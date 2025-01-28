@@ -11,6 +11,7 @@ const tailwindConfig = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#132e7d",
+        secondary: "#07153c",
       },
     },
   },

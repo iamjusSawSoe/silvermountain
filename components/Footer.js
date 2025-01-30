@@ -5,7 +5,12 @@ const Footer = () => {
   return (
     <div className="flex items-center justify-evenly py-16">
       <div className="flex flex-col mt-3 gap-3 mb-10">
-        <Image src={"/logo.png"} alt="logo" width={100} height={100} />
+        <Image
+          src={"/assets/blue_logo.png"}
+          alt="logo"
+          width={100}
+          height={100}
+        />
         <h2 className="text-secondary text-lg font-bold">
           SILVER MOUNTAIN PTE LTD - RELIABLE
         </h2>

@@ -1,8 +1,10 @@
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="">
+      <Hero />
       <div className="bg-secondary text-white p-10">
         <h1 className="text-center text-5xl font-bold mb-10">
           Key Benefits of working with us
@@ -20,8 +22,8 @@ export default function Home() {
             <Image
               src={"/assets/Icon/1.png"}
               alt="silver mountain benefits"
-              width={170}
-              height={170}
+              width={150}
+              height={150}
             />
           </div>
 
@@ -36,8 +38,8 @@ export default function Home() {
             <Image
               src={"/assets/Icon/2.png"}
               alt="silver mountain benefits"
-              width={170}
-              height={170}
+              width={150}
+              height={150}
             />
           </div>
 
@@ -52,8 +54,8 @@ export default function Home() {
             <Image
               src={"/assets/Icon/3.png"}
               alt="silver mountain benefits"
-              width={170}
-              height={170}
+              width={150}
+              height={150}
             />
           </div>
 
@@ -68,8 +70,8 @@ export default function Home() {
             <Image
               src={"/assets/Icon/1.png"}
               alt="silver mountain benefits"
-              width={170}
-              height={170}
+              width={150}
+              height={150}
             />
           </div>
         </div>

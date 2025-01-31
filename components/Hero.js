@@ -1,6 +1,7 @@
 "use client";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const slides = [
@@ -11,11 +12,18 @@ const slides = [
 
 const Hero = () => {
   return (
-    <Swiper spaceBetween={0} slidesPerView={1} className="h-[90dvh] w-full">
+    <Swiper
+      spaceBetween={0}
+      slidesPerView={1}
+      className="h-[90dvh] w-full"
+      modules={[Autoplay]}
+      loop={true}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
+    >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div
-            className="h-[90dvh] w-full bg-cover bg-center text-white text-left font-bold"
+            className="h-[700px] w-full bg-cover bg-center text-white text-left font-bold"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             <div className="w-[76%] mx-auto pt-40 grid grid-cols-[80%,20%]">

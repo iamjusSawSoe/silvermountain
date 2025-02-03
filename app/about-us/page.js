@@ -16,10 +16,10 @@ const AboutUs = () => {
             time.
           </p>
           <p className="font-bold text-xl leading-10 mt-10">
-            When you partner with Silver Moutain, you're not just reaching the
-            summit of the service; you're building a path to unshakable growth.
-            Let us be the cornerstone of your success as we climb to the top
-            together.
+            When you partner with Silver Moutain, you&apos;re not just reaching
+            the summit of the service; you&apos;re building a path to unshakable
+            growth. Let us be the cornerstone of your success as we climb to the
+            top together.
           </p>
         </div>
         <div className="">
@@ -46,8 +46,9 @@ const AboutUs = () => {
           <h1 className="text-5xl font-bold text-primary">MISSION</h1>
           <p className="mt-8 font-bold text-xl leading-10">
             At Silver Mountain, our mission is to elevate business worldwide by
-            providing premium-quality and it's Products, Nataural Rubber, and
-            Wood Pellets, through dependable logistics and competitve pricing.
+            providing premium-quality and it&apos;s Products, Nataural Rubber,
+            and Wood Pellets, through dependable logistics and competitve
+            pricing.
           </p>
 
           <h1 className="text-5xl font-bold text-primary mt-6">VISION</h1>
@@ -110,9 +111,9 @@ const AboutUs = () => {
               </div>
               <span className="mt-[3px] font-bold text-lg">
                 <span className="text-primary">Excellence: </span>
-                We strive for excellence in all that we do. Whether it's the
-                quality of our products, the efficiency of our services, or the
-                strength of our customer relationships, we aim to exceed
+                We strive for excellence in all that we do. Whether it&apos;s
+                the quality of our products, the efficiency of our services, or
+                the strength of our customer relationships, we aim to exceed
                 expectations.
               </span>
             </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-evenly py-16">
+    <div className="flex flex-col  lg:flex-row items-center justify-evenly py-10 lg:py-16">
       <div className="flex flex-col mt-3 gap-3 mb-10">
         <Image
           src={"/assets/blue_logo.png"}
@@ -22,7 +22,7 @@ const Footer = () => {
         </h2>
       </div>
 
-      <div className="self-start mt-14">
+      <div className="hidden lg:block self-start mt-14">
         <h1 className="text-secondary text-2xl font-bold">Location</h1>
         <div className="flex flex-col mt-3">
           <span>7 Temasek Boulevard, #12-07</span>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="self-start mt-14">
+      <div className=" hidden lg:block self-start mt-14">
         <h1 className="text-secondary text-2xl font-bold">Quick Links</h1>
         <div className="flex flex-col mt-3">
           <Link href={"/"}>Home</Link>
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="self-start mt-14">
+      <div className="hidden lg:block self-start mt-14">
         <h1 className="text-secondary text-2xl font-bold">Contact</h1>
         <div className="flex flex-col mt-3">
           <span>
@@ -50,6 +50,27 @@ const Footer = () => {
           <span>
             Website - <b>www.silvermountain.com</b>
           </span>
+        </div>
+      </div>
+
+      <div className="flex flex-col sm:flex-row lg:hidden gap-6 justify-evenly sm:w-auto sm:gap-12">
+        <div className="self-start mt-4">
+          <h1 className="text-secondary text-2xl font-bold">Location</h1>
+          <div className="flex flex-col mt-3">
+            <span>7 Temasek Boulevard, #12-07</span>
+            <span>Singapore 038987</span>
+          </div>
+        </div>
+        <div className="self-start mt-4">
+          <h1 className="text-secondary text-2xl font-bold">Contact</h1>
+          <div className="flex flex-col mt-3">
+            <span>
+              Email - <b>admin@silvermountain.com</b>
+            </span>
+            <span>
+              Website - <b>www.silvermountain.com</b>
+            </span>
+          </div>
         </div>
       </div>
     </div>

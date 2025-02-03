@@ -7,43 +7,30 @@ const Services = () => {
         className="h-screen bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/service/1.jpg')" }}
       >
-        <div className="text-white font-bold w-[75%] mx-auto h-full flex items-center">
-          <div className="grid grid-cols-[63%_37%] gap-8 items-center">
+        <div className="text-white font-bold w-[90%] xl:w-[75%] mx-auto h-full flex items-center">
+          <div className="grid lg:grid-cols-[63%_37%] gap-8 items-center">
             <div>
               <h2 className="text-5xl mb-4">Our Services</h2>
               <p className="text-lg mb-5 whitespace-pre-line leading-loose tracking-[0.02rem]">
                 At Silver Mountain, we are dedicated to providing unparalleled
-                service that exceeds expectations at every turn. Whether it's
-                bulk trading, logistics, or tailored solutions, our team ensures
-                timely deliveries, precise operations, and clear communication.
-                When you choose Silver Mountain, you're choosing a partner
-                committed to delivering the highest standards of service, every
-                time.
+                service that exceeds expectations at every turn. Whether
+                it&apos;s bulk trading, logistics, or tailored solutions, our
+                team ensures timely deliveries, precise operations, and clear
+                communication. When you choose Silver Mountain, you&apos;re
+                choosing a partner committed to delivering the highest standards
+                of service, every time.
               </p>
             </div>
 
-            <div></div>
+            <div className="hidden lg:block"></div>
           </div>
         </div>
       </div>
 
-      <div className="w-[75%] mx-auto py-20">
-        <section className="grid grid-cols-[45%_55%] gap-2  justify-center">
-          {/* Image Section */}
-          <div className="w-full h-full flex">
-            <Image
-              src="/assets/service/2.png"
-              alt="silver mountain services"
-              width={100}
-              height={800}
-              layout="responsive"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Text Section */}
-          <div className="mt-10">
+      <div className="w-[90%] xl:w-[75%] mx-auto pb-0 xl:py-20">
+        <section className="grid grid-flow-dense lg:grid-cols-[45%_55%] gap-2 justify-center">
+          {/* Text Section (First on mobile, second on large screens) */}
+          <div className="mt-10 order-1 lg:order-2">
             <h1 className="text-5xl font-bold text-primary">Services</h1>
             <ul className="mt-8 pl-5 pr-16 font-bold text-lg leading-9 list-disc">
               <li>
@@ -68,6 +55,19 @@ const Services = () => {
                 needs.
               </li>
             </ul>
+          </div>
+
+          {/* Image Section (Second on mobile, first on large screens) */}
+          <div className=" w-full lg:max-w-full  h-auto lg:h-full flex order-2 lg:order-1">
+            <Image
+              src="/assets/service/2.png"
+              alt="silver mountain services"
+              width={800}
+              height={800}
+              layout="intrinsic"
+              sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 30vw"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
       </div>

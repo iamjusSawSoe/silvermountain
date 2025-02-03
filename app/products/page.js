@@ -40,7 +40,6 @@ const Products = () => {
           </div>
         </div>
       </div>
-
       <div className="w-[75%] mx-auto py-20">
         <section className="grid grid-cols-[40%_55%] gap-8 items-center justify-center">
           {/* Image Section */}
@@ -55,7 +54,6 @@ const Products = () => {
               className="w-full h-full object-cover"
             />
           </div>
-
           {/* Text Section */}
           <div>
             <h1 className="text-5xl font-bold text-primary">Services</h1>
@@ -65,7 +63,6 @@ const Products = () => {
               <li>High Speed Diesel</li>
               <li>Automotive Diesel (EN590)</li>
             </ul>
-
             <h1 className="text-4xl mt-6 font-bold text-primary">
               Applications
             </h1>
@@ -73,7 +70,6 @@ const Products = () => {
               Used across industries such as energy, food production, and
               manufacturing.
             </p>
-
             <h1 className="text-4xl mt-6 font-bold text-primary">
               Product Quality
             </h1>

@@ -69,7 +69,7 @@ const AboutUs = () => {
           {/* Text Content (70%) */}
           <div className="space-y-2">
             <div className="flex gap-2">
-              <div className="w-6 mt-[0.6rem]">
+              <div className="w-6 mt-[0.7rem]">
                 <FaCircle fontSize={12} className="text-primary" />
               </div>
               <span className="mt-[3px] font-bold text-lg">
@@ -81,7 +81,7 @@ const AboutUs = () => {
               </span>
             </div>
             <div className="flex gap-2">
-              <div className="w-6 mt-[0.6rem]">
+              <div className="w-6 mt-[0.7rem]">
                 <FaCircle fontSize={12} className="text-primary" />
               </div>
               <span className="mt-[3px] font-bold text-lg">
@@ -93,7 +93,7 @@ const AboutUs = () => {
               </span>
             </div>
             <div className="flex gap-2">
-              <div className="w-6 mt-[0.6rem]">
+              <div className="w-6 mt-[0.7rem]">
                 <FaCircle fontSize={12} className="text-primary" />
               </div>
               <span className="mt-[3px] font-bold text-lg">
@@ -105,7 +105,7 @@ const AboutUs = () => {
               </span>
             </div>
             <div className="flex gap-2">
-              <div className="w-6 mt-[0.6rem]">
+              <div className="w-6 mt-[0.7rem]">
                 <FaCircle fontSize={12} className="text-primary" />
               </div>
               <span className="mt-[3px] font-bold text-lg">

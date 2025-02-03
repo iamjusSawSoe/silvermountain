@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname(); // Get the current route
+
   return (
     <div className="grid grid-cols-[35%_65%] items-center bg-primary text-white px-20 h-[7.5rem]">
       <Image
@@ -12,23 +17,45 @@ const Header = () => {
         height={95}
         priority
       />
-      <div className="flex gap-10  justify-between items-center text-bold text-lg text-[22px] mr-20">
+      <div className="flex gap-10 justify-between items-center font-bold text-lg text-[22px] mr-20">
         <Link
-          className="mx-2 cursor-pointer bg-white rounded-full text-primary px-6 py-2  pb-3 flex items-center justify-center "
+          className={`cursor-pointer px-6 py-2 pb-3 flex items-center justify-center rounded-full ${
+            pathname === "/" ? "bg-white text-primary" : ""
+          }`}
           href="/"
         >
           Home
         </Link>
-        <Link className="mx-2 cursor-pointer" href="/about-us">
+        <Link
+          className={`cursor-pointer px-6 py-2 pb-3 flex items-center justify-center rounded-full ${
+            pathname === "/about-us" ? "bg-white text-primary" : ""
+          }`}
+          href="/about-us"
+        >
           About Us
         </Link>
-        <Link className="mx-2 cursor-pointer" href="/products">
+        <Link
+          className={`cursor-pointer px-6 py-2 pb-3 flex items-center justify-center rounded-full ${
+            pathname === "/products" ? "bg-white text-primary" : ""
+          }`}
+          href="/products"
+        >
           Products
         </Link>
-        <Link className="mx-2 cursor-pointer" href="/services">
+        <Link
+          className={`cursor-pointer px-6 py-2 pb-3 flex items-center justify-center rounded-full ${
+            pathname === "/services" ? "bg-white text-primary" : ""
+          }`}
+          href="/services"
+        >
           Services
         </Link>
-        <Link className="mx-2 cursor-pointer" href="/contact-us">
+        <Link
+          className={`cursor-pointer px-6 py-2 pb-3 flex items-center justify-center rounded-full ${
+            pathname === "/contact-us" ? "bg-white text-primary" : ""
+          }`}
+          href="/contact-us"
+        >
           Contact Us
         </Link>
       </div>

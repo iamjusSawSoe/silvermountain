@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col  lg:flex-row items-center justify-evenly py-10 lg:py-16">
+    <div className="flex flex-col lg:flex-row bg-gradient-to-b from-gray-200 to-white shadow-[inset_0px_10px_30px_rgba(0,0,0,0.2)] items-center justify-evenly py-10 lg:py-16">
       <div className="flex flex-col mt-3 gap-3 mb-10">
         <Image
           src={"/assets/blue_logo.png"}

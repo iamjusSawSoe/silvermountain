@@ -10,8 +10,10 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Silver Mountain Pte Ltd",
-  description: "",
+  title:
+    "Silver Mountain Pte Ltd - Delivers unmatched excellence across suply chains worldwide",
+  description:
+    "Sliver Mountains Standing as a global leader in wholesale trading and logistics solutions, Silver mountain delivers unmatched excellence across suply chains worldwide. Our comprehensive services extends to products such as Oil and its Products, Natural Rubber, and Wood Pellets.",
 };
 
 export default function RootLayout({ children }) {

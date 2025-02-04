@@ -40,7 +40,7 @@ const Header = () => {
     <div className="grid grid-cols-[35%_65%] items-center bg-primary text-white px-16 lg:px-10 xl:px-20 h-[7.5rem]">
       {/* Logo */}
       <Image
-        src="/assets/logo.png"
+        src="/assets/Logo.png"
         className="justify-self-start align-self-center mb-4"
         alt="logo"
         width={95}

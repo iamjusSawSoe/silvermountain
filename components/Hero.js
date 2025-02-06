@@ -23,15 +23,15 @@ const Hero = () => {
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div
-            className="h-[700px] w-full bg-cover bg-center text-white text-left font-bold"
+            className="h-[750px] sm:h-[700px] w-full bg-cover bg-center text-white text-left font-bold"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <div className=" w-[90%] xl:w-[76%] mx-auto pt-40 grid lg:grid-cols-[80%,20%]">
+            <div className=" w-[90%] xl:w-[76%] mx-auto pt-24 sm:pt-40 grid lg:grid-cols-[80%,20%]">
               <div>
-                <h3 className="text-4xl md:text-[2.75rem] leading-4 tracking-[0.02rem]">
+                <h3 className="text-[2rem] sm:text-4xl md:text-[2.75rem] leading-4 tracking-[0.02rem]">
                   Welcome To
                 </h3>
-                <h1 className="mt-8 md:mt-8 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.5rem]  tracking-[0.02rem] leading-4">
+                <h1 className="mt-8 md:mt-8 text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[6.5rem]  tracking-[0.02rem] leading-[3.5rem] sm:leading-4">
                   Silver Mountain
                 </h1>
                 <p className="mt-8 md:mt-12 text-lg ">

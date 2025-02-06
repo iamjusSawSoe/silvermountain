@@ -68,7 +68,7 @@ const Footer = () => {
               Email - <b>admin@silvermountain.com</b>
             </span>
             <span>
-              Website - <b>www.silvermountain.com</b>
+              Website - <b>www.silvermountainpteltd.com</b>
             </span>
           </div>
         </div>

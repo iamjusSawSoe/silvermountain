@@ -9,7 +9,7 @@ export default function Home() {
     <div className="">
       <Hero />
       <div className="bg-secondary text-white p-10">
-        <h1 className="text-center text-5xl font-bold mb-16 md:mb-10">
+        <h1 className="text-center text-3xl md:text-5xl font-bold mb-16 md:mb-10">
           Key Benefits of working with us
         </h1>
 

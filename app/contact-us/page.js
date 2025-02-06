@@ -27,7 +27,7 @@ const ContactUs = () => {
   return (
     <div
       className="h-[60rem] md:h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/assets/service/1.jpg')" }}
+      style={{ backgroundImage: "url('/assets/contact_us/1.jpg')" }}
     >
       <div className="text-white w-[90%] lg:w-[75%] mx-auto min-h-screen">
         <motion.div

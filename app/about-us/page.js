@@ -8,39 +8,49 @@ const AboutUs = () => {
   return (
     <div className="w-[90%] xl:w-[70%] mx-auto my-14">
       {/* Start of Company interview */}
-      <div className="flex flex-col lg:flex-row justify-center mb-32 items-center w-full gap-10">
-        <div>
-          <h1 className="text-5xl font-bold text-primary">Company Overview</h1>
-          <p className="mt-8 font-bold text-xl leading-10">
-            With over 15 years of experience in the wholesale trading industry,
-            we bring premium Oil and its Products, Natural Rubber, and Wood
-            Pellets to business worldwide. With a global network and a steadfast
-            commitment to quality, we ensure every delivery is reliable and on
-            time.
-          </p>
-          <p className="font-bold text-xl leading-10 mt-10">
-            When you partner with Silver Moutain, you&apos;re not just reaching
-            the summit of the service; you&apos;re building a path to unshakable
-            growth. Let us be the cornerstone of your success as we climb to the
-            top together.
-          </p>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }} // Ensures it animates once when in view
+        className="flex flex-col lg:flex-row justify-center mb-32 items-center w-full gap-10"
+      >
+        <div className="flex flex-col lg:flex-row justify-center mb-32 items-center w-full gap-10">
+          <div>
+            <h1 className="text-5xl font-bold text-primary">
+              Company Overview
+            </h1>
+            <p className="mt-8 font-bold text-xl leading-10">
+              With over 15 years of experience in the wholesale trading
+              industry, we bring premium Oil and its Products, Natural Rubber,
+              and Wood Pellets to business worldwide. With a global network and
+              a steadfast commitment to quality, we ensure every delivery is
+              reliable and on time.
+            </p>
+            <p className="font-bold text-xl leading-10 mt-10">
+              When you partner with Silver Moutain, you&apos;re not just
+              reaching the summit of the service; you&apos;re building a path to
+              unshakable growth. Let us be the cornerstone of your success as we
+              climb to the top together.
+            </p>
+          </div>
+          <div className=" mx-auto lg:mx-0 w-[80%] lg:w-auto">
+            <Image
+              src={"/assets/about_us/3.jpg"}
+              alt="silver mountain about us"
+              width={2000}
+              height={500}
+              className=""
+            />
+          </div>
         </div>
-        <div className=" mx-auto lg:mx-0 w-[80%] lg:w-auto">
-          <Image
-            src={"/assets/about_us/3.jpg"}
-            alt="silver mountain about us"
-            width={2000}
-            height={500}
-            className=""
-          />
-        </div>
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.6 }} // Animation settings
+        viewport={{ once: true, amount: 0.3 }} // Animation settings
       >
         {/* start of mission and vision */}
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-20 mt-16">
@@ -76,7 +86,7 @@ const AboutUs = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.6 }} // Animation settings
+        viewport={{ once: true, amount: 0.3 }} // Animation settings
       >
         <div>
           <h1 className="text-5xl font-bold text-primary mt-16">

@@ -9,46 +9,56 @@ const Products = () => {
         className="h-screen bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/product/1.jpg')" }}
       >
-        <div className="text-white font-bold w-[90%] lg:w-[75%] mx-auto py-20">
-          <div className="grid xl:grid-cols-[63%_37%] gap-8">
-            <div className="w-full xl:w-auto">
-              <h2 className="text-5xl mb-4">Our Products</h2>
-              <p className="text-lg mb-5 whitespace-pre-line">
-                At Silver Mountain, we offer a premium selection of products
-                sourced <span className="hidden lg:block mt-2"></span> from
-                around the world to meet your business needs. Our portfolio
-                includes:
-              </p>
-              <div className="pr-40 ">
-                <h4 className="text-2xl mb-2">Oil and Its Products:</h4>
-                <p className="text-sm mb-4 leading-loose">
-                  From crude oil to refined derivatives, we provide high-quality
-                  oil and energy products that fuel industries across the globe.
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }} // Ensures it animates once when in view
+          className="flex flex-col lg:flex-row justify-center mb-32 items-center w-full gap-10"
+        >
+          <div className="text-white font-bold w-[90%] lg:w-[75%] mx-auto py-20">
+            <div className="grid xl:grid-cols-[63%_37%] gap-8">
+              <div className="w-full xl:w-auto">
+                <h2 className="text-5xl mb-4">Our Products</h2>
+                <p className="text-lg mb-5 whitespace-pre-line">
+                  At Silver Mountain, we offer a premium selection of products
+                  sourced <span className="hidden lg:block mt-2"></span> from
+                  around the world to meet your business needs. Our portfolio
+                  includes:
                 </p>
-                <h4 className="text-2xl mb-2">Natural Rubber:</h4>
-                <p className="text-sm mb-4 leading-loose">
-                  Sourced from trusted suppliers, our natural rubber is known
-                  for its durability and versatility, meeting the needs of
-                  manufacturing, automotive, and more.
-                </p>
-                <h4 className="text-2xl mb-2">Wood Pellets:</h4>
-                <p className="text-sm mb-4 leading-loose">
-                  An eco-friendly energy solution, our wood pellets are
-                  sustainably sourced, offering efficient heating options while
-                  supporting greener energy alternatives.
-                </p>
+                <div className="pr-40 ">
+                  <h4 className="text-2xl mb-2">Oil and Its Products:</h4>
+                  <p className="text-sm mb-4 leading-loose">
+                    From crude oil to refined derivatives, we provide
+                    high-quality oil and energy products that fuel industries
+                    across the globe.
+                  </p>
+                  <h4 className="text-2xl mb-2">Natural Rubber:</h4>
+                  <p className="text-sm mb-4 leading-loose">
+                    Sourced from trusted suppliers, our natural rubber is known
+                    for its durability and versatility, meeting the needs of
+                    manufacturing, automotive, and more.
+                  </p>
+                  <h4 className="text-2xl mb-2">Wood Pellets:</h4>
+                  <p className="text-sm mb-4 leading-loose">
+                    An eco-friendly energy solution, our wood pellets are
+                    sustainably sourced, offering efficient heating options
+                    while supporting greener energy alternatives.
+                  </p>
+                </div>
               </div>
+              <div className="hidden xl:block"></div>
             </div>
-            <div className="hidden xl:block"></div>
           </div>
-        </div>
+        </motion.div>
       </div>
+
       <div className=" w-[90%] xl:w-[75%] mx-auto py-14 lg:py-20">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <section className="grid grid-flow-dense lg:grid-cols-[40%_55%] gap-8 items-center justify-center">
             {/* Image Section */}

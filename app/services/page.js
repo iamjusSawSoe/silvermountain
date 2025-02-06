@@ -10,22 +10,29 @@ const Services = () => {
         style={{ backgroundImage: "url('/assets/service/1.jpg')" }}
       >
         <div className="text-white font-bold w-[90%] xl:w-[75%] mx-auto h-full flex items-center">
-          <div className="grid lg:grid-cols-[63%_37%] gap-8 items-center">
-            <div>
-              <h2 className="text-5xl mb-4">Our Services</h2>
-              <p className="text-lg mb-5 whitespace-pre-line leading-loose tracking-[0.02rem]">
-                At Silver Mountain, we are dedicated to providing unparalleled
-                service that exceeds expectations at every turn. Whether
-                it&apos;s bulk trading, logistics, or tailored solutions, our
-                team ensures timely deliveries, precise operations, and clear
-                communication. When you choose Silver Mountain, you&apos;re
-                choosing a partner committed to delivering the highest standards
-                of service, every time.
-              </p>
-            </div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }} // Ensures it animates once when in view
+          >
+            <div className="grid lg:grid-cols-[63%_37%] gap-8 items-center">
+              <div>
+                <h2 className="text-5xl mb-4">Our Services</h2>
+                <p className="text-lg mb-5 whitespace-pre-line leading-loose tracking-[0.02rem]">
+                  At Silver Mountain, we are dedicated to providing unparalleled
+                  service that exceeds expectations at every turn. Whether
+                  it&apos;s bulk trading, logistics, or tailored solutions, our
+                  team ensures timely deliveries, precise operations, and clear
+                  communication. When you choose Silver Mountain, you&apos;re
+                  choosing a partner committed to delivering the highest
+                  standards of service, every time.
+                </p>
+              </div>
 
-            <div className="hidden lg:block"></div>
-          </div>
+              <div className="hidden lg:block"></div>
+            </div>
+          </motion.div>
         </div>
       </div>
 
@@ -34,7 +41,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <section className="grid grid-flow-dense lg:grid-cols-[45%_55%] gap-2 justify-center">
             {/* Text Section (First on mobile, second on large screens) */}

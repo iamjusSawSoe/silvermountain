@@ -37,7 +37,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="grid grid-cols-[35%_65%] items-center bg-primary text-white px-16 lg:px-10 xl:px-20 h-[7.5rem]">
+    <div className="grid grid-cols-[35%_65%] items-center bg-primary text-white px-8 sm:px-16 lg:px-10 xl:px-20 h-[7.5rem]">
       {/* Logo */}
       <Image
         src="/assets/Logo.png"

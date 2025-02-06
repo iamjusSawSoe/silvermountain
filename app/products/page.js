@@ -6,17 +6,16 @@ const Products = () => {
   return (
     <div>
       <div
-        className="h-screen bg-cover bg-center"
+        className="h-auto bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/product/1.jpg')" }}
       >
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.2 }} // Ensures it animates once when in view
-          className="flex flex-col lg:flex-row justify-center mb-32 items-center w-full gap-10"
+          className="flex flex-col lg:flex-row justify-center   items-center w-full gap-10"
         >
-          <div className="text-white font-bold w-[90%] lg:w-[75%] mx-auto py-20">
+          <div className=" text-white font-bold w-[90%] lg:w-[75%] mx-auto py-20">
             <div className="grid xl:grid-cols-[63%_37%] gap-8">
               <div className="w-full xl:w-auto">
                 <h2 className="text-5xl mb-4">Our Products</h2>
@@ -26,7 +25,7 @@ const Products = () => {
                   around the world to meet your business needs. Our portfolio
                   includes:
                 </p>
-                <div className="pr-40 ">
+                <div className=" sm:pr-40 ">
                   <h4 className="text-2xl mb-2">Oil and Its Products:</h4>
                   <p className="text-sm mb-4 leading-loose">
                     From crude oil to refined derivatives, we provide
@@ -58,7 +57,7 @@ const Products = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <section className="grid grid-flow-dense lg:grid-cols-[40%_55%] gap-8 items-center justify-center">
             {/* Image Section */}
@@ -104,7 +103,7 @@ const Products = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <section className="grid grid-flow-dense lg:grid-cols-[40%_55%] gap-8 mt-20 items-center justify-center">
             {/* Image Section */}
@@ -150,7 +149,7 @@ const Products = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <section className="grid grid-flow-dense lg:grid-cols-[40%_55%] gap-8 mt-20 items-center justify-center">
             {/* Image Section */}

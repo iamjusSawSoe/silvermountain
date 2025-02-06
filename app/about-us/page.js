@@ -12,10 +12,8 @@ const AboutUs = () => {
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.2 }} // Ensures it animates once when in view
-        className="flex flex-col lg:flex-row justify-center mb-32 items-center w-full gap-10"
       >
-        <div className="flex flex-col lg:flex-row justify-center mb-32 items-center w-full gap-10">
+        <div className="flex flex-col lg:flex-row justify-center mb-16 sm:mb-32 items-center w-full gap-10">
           <div>
             <h1 className="text-5xl font-bold text-primary">
               Company Overview
@@ -50,10 +48,10 @@ const AboutUs = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }} // Animation settings
+        viewport={{ once: true }} // Animation settings
       >
         {/* start of mission and vision */}
-        <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-20 mt-16">
+        <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-20 mt-8 sm:mt-16">
           <Image
             src={"/assets/about_us/1.jpg"}
             alt="silver mountain about us"

@@ -6,16 +6,16 @@ const Services = () => {
   return (
     <div>
       <div
-        className="h-screen bg-cover bg-center"
+        className="h-auto bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/service/1.jpg')" }}
       >
-        <div className="text-white font-bold w-[90%] xl:w-[75%] mx-auto h-full flex items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }} // Ensures it animates once when in view
-          >
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          className="flex flex-col lg:flex-row justify-center items-center w-full gap-10"
+        >
+          <div className="text-white font-bold w-[90%] xl:w-[75%] mx-auto py-20 flex items-center">
             <div className="grid lg:grid-cols-[63%_37%] gap-8 items-center">
               <div>
                 <h2 className="text-5xl mb-4">Our Services</h2>
@@ -32,11 +32,11 @@ const Services = () => {
 
               <div className="hidden lg:block"></div>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
 
-      <div className="w-[90%] xl:w-[75%] mx-auto pb-0 xl:py-20">
+      <div className="w-[90%] xl:w-[75%] mx-auto py-12 md:py-20">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const Services = () => {
         >
           <section className="grid grid-flow-dense lg:grid-cols-[45%_55%] gap-2 justify-center">
             {/* Text Section (First on mobile, second on large screens) */}
-            <div className="mt-10 order-1 lg:order-2">
+            <div className="mt-0 md:mt-10 order-1 lg:order-2">
               <h1 className="text-5xl font-bold text-primary">Services</h1>
               <ul className="mt-8 pl-5 pr-16 font-bold text-lg leading-9 list-disc">
                 <li>
@@ -73,7 +73,7 @@ const Services = () => {
             </div>
 
             {/* Image Section (Second on mobile, first on large screens) */}
-            <div className=" mx-auto lg:mx-0 max-w-full  h-auto lg:h-full flex order-2 lg:order-1">
+            <div className=" mx-auto lg:mx-0 max-w-full mt-12 md:mt-0  h-auto lg:h-full flex order-2 lg:order-1">
               <Image
                 src="/assets/service/2.png"
                 alt="silver mountain services"

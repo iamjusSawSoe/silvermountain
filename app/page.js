@@ -19,11 +19,11 @@ export default function Home() {
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <div className="grid w-full items-center justify-center grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-20">
+          <div className="grid w-full items-center justify-center grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-20 mb-20">
             <div className="flex flex-col-reverse md:flex-row w-full gap-8 xl:gap-16 justify-center xl:justify-normal items-start md:items-center">
               <div className="flex flex-col gap-3">
                 <h4 className="text-2xl font-bold">Unparalleled Service</h4>
-                <p className="w-auto md:w-[26rem] font-semibold">
+                <p className="w-auto md:w-[26rem] font-semibold leading-8">
                   We don&apos;t just move goods—we move mountains to ensure your
                   needs are met with peak performance.
                 </p>
@@ -39,7 +39,7 @@ export default function Home() {
             <div className="flex flex-col-reverse md:flex-row w-full gap-8 xl:gap-16 justify-center xl:justify-normal items-start md:items-center">
               <div className="flex flex-col gap-3">
                 <h4 className="text-2xl font-bold">Competitive Pricing</h4>
-                <p className="w-auto md:w-[26rem] font-semibold">
+                <p className="w-auto md:w-[26rem] font-semibold leading-8">
                   Our goal sourcing expertise and streamlined operations allow
                   us to offer competitve pricing without compromising on
                   quality.
@@ -56,9 +56,11 @@ export default function Home() {
             <div className="flex flex-col-reverse md:flex-row w-full gap-8  xl:gap-16 justify-center xl:justify-normal items-start md:items-center">
               <div className="flex flex-col gap-3">
                 <h4 className="text-2xl font-bold">Premium Quality</h4>
-                <p className="w-auto md:w-[26rem] font-semibold">
+                <p className="w-auto md:w-[26rem] font-semibold leading-8">
                   We offer premium products that meet the highest global
-                  standards. Sourced from trusted
+                  standards. Sourced from trusted suppliers around the world,
+                  our products are carefully selected to ensure excellence at
+                  every level.
                 </p>
               </div>
               <Image
@@ -72,9 +74,10 @@ export default function Home() {
             <div className="flex flex-col-reverse md:flex-row w-full gap-8 xl:gap-16 justify-center xl:justify-normal items-start md:items-center">
               <div className="flex flex-col gap-3">
                 <h4 className="text-2xl font-bold">Unparalleled Service</h4>
-                <p className="w-auto md:w-[26rem] font-semibold">
-                  We don&apos;t just move goods—we move mountains to ensure your
-                  needs are met with peak performance.
+                <p className="w-auto md:w-[26rem] font-semibold leading-8">
+                  We understand that timing is everything. That&apos;s why we
+                  prioritize dependable and reliable deliveries, ensuring your
+                  goods arrive on schedule, every time.
                 </p>
               </div>
               <Image

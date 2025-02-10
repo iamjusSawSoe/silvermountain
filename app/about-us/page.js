@@ -70,9 +70,9 @@ const AboutUs = () => {
 
             <h1 className="text-5xl font-bold text-primary mt-6">VISION</h1>
             <p className="mt-8 font-bold text-xl leading-10">
-              To be the principle of excellence in wholesale trading, scaling
-              new heights in reliablity, innovation, and customer satisfaction.
-              At Silver Mountain, we envision a world where our solutions help
+              To be the pinnacle of excellence in wholesale trading, scaling new
+              heights in reliablity, innovation, and customer satisfaction. At
+              Silver Mountain, we envision a world where our solutions help
               every partner reach new heights of success.
             </p>
           </div>
@@ -86,7 +86,7 @@ const AboutUs = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }} // Animation settings
       >
-        <div>
+        <div className="mb-20">
           <h1 className="text-5xl font-bold text-primary mt-16">
             Core Values (R.I.S.E)
           </h1>

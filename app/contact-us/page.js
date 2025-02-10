@@ -54,7 +54,7 @@ const ContactUs = () => {
                 7 Temasek Boulevard, #12-07 <span className="md:block"></span>{" "}
                 Singapore 038987
               </p>
-              <p className="text-base lg:text-lg mb-4">Tel: Your Number</p>
+              {/* <p className="text-base lg:text-lg mb-4">Tel: Your Number</p> */}
               <p className="text-base lg:text-lg">
                 Email: silvermountainpteltd@gmail.com
               </p>

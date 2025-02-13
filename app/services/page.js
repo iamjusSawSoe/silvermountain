@@ -16,7 +16,7 @@ const Services = () => {
           className="flex flex-col lg:flex-row justify-center items-center w-full gap-10"
         >
           <div className="text-white font-bold w-[90%] xl:w-[75%] mx-auto  py-20 flex min-h-screen lg:h-screen">
-            <div className="grid lg:grid-cols-[63%_37%] gap-8 items-center">
+            <div className="grid lg:grid-cols-[67%_33%] gap-8 items-center">
               <div>
                 <h2 className="text-5xl mb-4">Our Services</h2>
                 <p className="text-lg mb-5 whitespace-pre-line leading-loose tracking-[0.02rem]">

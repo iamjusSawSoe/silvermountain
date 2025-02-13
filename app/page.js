@@ -73,7 +73,7 @@ export default function Home() {
 
             <div className="flex flex-col-reverse md:flex-row w-full gap-8 xl:gap-16 justify-center xl:justify-normal items-start md:items-center">
               <div className="flex flex-col gap-3">
-                <h4 className="text-2xl font-bold">Unparalleled Service</h4>
+                <h4 className="text-2xl font-bold">Reliable Delivery</h4>
                 <p className="w-auto md:w-[26rem] font-semibold leading-8">
                   We understand that timing is everything. That&apos;s why we
                   prioritize dependable and reliable deliveries, ensuring your
@@ -81,7 +81,7 @@ export default function Home() {
                 </p>
               </div>
               <Image
-                src={"/assets/Icon/1.png"}
+                src={"/assets/Icon/4.png"}
                 alt="silver mountain benefits"
                 width={150}
                 height={150}

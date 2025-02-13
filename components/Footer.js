@@ -5,12 +5,15 @@ const Footer = () => {
   return (
     <div className="flex flex-col lg:flex-row bg-gradient-to-b from-gray-200 to-white shadow-[inset_0px_10px_30px_rgba(0,0,0,0.2)] items-center justify-evenly py-10 lg:py-16">
       <div className="flex flex-col mt-3 gap-3 mb-10">
-        <Image
-          src={"/assets/blue_logo.png"}
-          alt="logo"
-          width={100}
-          height={100}
-        />
+        <Link href={"/"}>
+          <Image
+            src={"/assets/blue_logo.png"}
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        </Link>
+
         <h2 className="text-secondary text-lg font-bold">
           SILVER MOUNTAIN PTE LTD - RELIABLE
         </h2>
@@ -32,9 +35,15 @@ const Footer = () => {
           <div className="self-start mt-4">
             <h1 className="text-secondary text-2xl font-bold">Contact</h1>
             <div className="flex flex-col mt-3">
-              <span>
-                Email - <b>sales@silvermountainpteltd.com</b>
-              </span>
+              <div className="flex gap-1">
+                <span>Email -</span>
+                <span className="flex flex-col">
+                  <b>sales@silvermountainpteltd.com</b>
+                  <b>zaw@silvermountainpteltd.com</b>
+                  <b>soe@silvermountainpteltd.com</b>
+                </span>
+              </div>
+
               <span>
                 Website - <b>www.silvermountainpteltd.com</b>
               </span>
@@ -65,9 +74,14 @@ const Footer = () => {
       <div className="hidden lg:block self-start mt-14">
         <h1 className="text-secondary text-2xl font-bold">Contact</h1>
         <div className="flex flex-col mt-3">
-          <span>
-            Email - <b>sales@silvermountain.com</b>
-          </span>
+          <div className="flex gap-1">
+            <span>Email - </span>
+            <span className="flex flex-col">
+              <b>sales@silvermountainpteltd.com</b>
+              <b>zaw@silvermountainpteltd.com</b>
+              <b>soe@silvermountainpteltd.com</b>
+            </span>
+          </div>
           <span>
             Website - <b>www.silvermountainpteltd.com</b>
           </span>

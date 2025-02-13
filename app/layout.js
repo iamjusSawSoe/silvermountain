@@ -93,7 +93,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${poppins.variable} antialiased`}>
         <Header />
-        <main>{children}</main>
+        <main className="pt-[7.5rem]">{children}</main>
         <Footer />
       </body>
     </html>

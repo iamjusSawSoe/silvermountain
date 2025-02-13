@@ -37,16 +37,18 @@ const Header = () => {
   ];
 
   return (
-    <div className="grid grid-cols-[35%_65%] items-center bg-primary text-white px-8 sm:px-16 lg:px-10 xl:px-20 h-[7.5rem]">
+    <div className="grid grid-cols-[35%_65%] fixed top-0 left-0 w-full z-50 items-center bg-primary text-white px-4 sm:px-12 lg:px-10 xl:px-20 h-[7.5rem]">
       {/* Logo */}
-      <Image
-        src="/assets/Logo.png"
-        className="justify-self-start align-self-center mb-4"
-        alt="logo"
-        width={95}
-        height={95}
-        priority
-      />
+      <Link href={"/"}>
+        <Image
+          src="/assets/Logo.png"
+          className="justify-self-start align-self-center mb-4"
+          alt="logo"
+          width={95}
+          height={95}
+          priority
+        />
+      </Link>
 
       {/* Desktop Navigation (visible on lg and above) */}
       <div className="hidden lg:flex gap-4 justify-between items-center font-bold text-lg text-[22px] xl:mr-20">

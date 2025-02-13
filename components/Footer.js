@@ -33,7 +33,7 @@ const Footer = () => {
             <h1 className="text-secondary text-2xl font-bold">Contact</h1>
             <div className="flex flex-col mt-3">
               <span>
-                Email - <b>admin@silvermountain.com</b>
+                Email - <b>sales@silvermountainpteltd.com</b>
               </span>
               <span>
                 Website - <b>www.silvermountainpteltd.com</b>
@@ -66,7 +66,7 @@ const Footer = () => {
         <h1 className="text-secondary text-2xl font-bold">Contact</h1>
         <div className="flex flex-col mt-3">
           <span>
-            Email - <b>admin@silvermountain.com</b>
+            Email - <b>sales@silvermountain.com</b>
           </span>
           <span>
             Website - <b>www.silvermountainpteltd.com</b>

@@ -83,7 +83,7 @@ const ContactUs = () => {
                 Singapore 038987
               </p>
               <p className="text-base lg:text-lg">
-                Email: silvermountainpteltd@gmail.com
+                Email: sales@silvermountainpteltd.com
               </p>
             </div>
 

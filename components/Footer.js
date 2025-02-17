@@ -39,8 +39,6 @@ const Footer = () => {
                 <span>Email -</span>
                 <span className="flex flex-col">
                   <b>sales@silvermountainpteltd.com</b>
-                  <b>zaw@silvermountainpteltd.com</b>
-                  <b>soe@silvermountainpteltd.com</b>
                 </span>
               </div>
 
@@ -78,8 +76,6 @@ const Footer = () => {
             <span>Email - </span>
             <span className="flex flex-col">
               <b>sales@silvermountainpteltd.com</b>
-              <b>zaw@silvermountainpteltd.com</b>
-              <b>soe@silvermountainpteltd.com</b>
             </span>
           </div>
           <span>

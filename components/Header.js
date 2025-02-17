@@ -78,11 +78,7 @@ const Header = () => {
       </div>
 
       {/* Material UI Drawer for Mobile Navigation */}
-      <Drawer
-        anchor="right" // Opens from the right
-        open={isDrawerOpen}
-        onClose={toggleDrawer(false)}
-      >
+      <Drawer anchor="right" open={isDrawerOpen} onClose={toggleDrawer(false)}>
         <div
           role="presentation"
           onClick={toggleDrawer(false)}

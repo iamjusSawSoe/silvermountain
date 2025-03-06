@@ -9,12 +9,8 @@ export async function POST(request) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: `"${name}" <onboarding@resend.dev>`,
-      to: [
-        "sales@silvermountain.com",
-        "zaw@silvermountain.com",
-        "soe@silvermountain.com",
-      ], // Replace with your email or multiple recipients
+      from: `"${name}" <noreply@silvermountainpteltd.com>`,
+      to: ["sales@silvermountainpteltd.com"], // Replace with your email or multiple recipients
       subject: `New Inquiry from ${name}`,
       react: EmailTemplate({ name, email, phoneNumber, inquiryType, inquiry }),
     });

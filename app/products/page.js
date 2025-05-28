@@ -77,7 +77,7 @@ const Products = () => {
               <h1 className="text-5xl font-bold text-primary">Types of Oil</h1>
               <ul className="mt-4 pl-6 font-bold text-lg leading-8 list-disc">
                 <li>Engine Oil</li>
-                <li>Cooking Oil</li>
+                <li>Mountain Grease</li>
                 <li>High Speed Diesel</li>
                 <li>Automotive Diesel (EN590)</li>
               </ul>
@@ -187,6 +187,55 @@ const Products = () => {
               <p className="mt-4 font-bold text-lg leading-8">
                 As eco-friendly renewable fuel, our wood pellets contribute to
                 reducing your carbon footprint.
+              </p>
+            </div>
+          </section>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <section className="grid grid-flow-dense lg:grid-cols-[40%_55%] gap-8 mt-20 items-center justify-center">
+            {/* Image Section */}
+            <div className="mx-auto lg:mx-0 max-w-full  h-auto mt-6 lg:mt-0 flex order-2 lg:order-1">
+              <Image
+                src="/assets/product/5.png"
+                alt="silver mountain services"
+                width={800}
+                height={800}
+                layout="intrinsic"
+                sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 30vw"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            {/* Text Section */}
+            <div className=" order-1 lg:order-2 ">
+              <h1 className="text-5xl font-bold text-primary">
+                Mountain Grease
+              </h1>
+
+              <p className="mt-4 font-bold text-lg leading-8">
+                Mountain Grease has excellent water resistant qualities.
+                Fortified with adhesive agents to stick to metal surfaces of
+                moving parts to avoid wear and tear.
+              </p>
+              <h1 className="text-4xl mt-6 font-bold text-primary">
+                Key Benefits
+              </h1>
+              <ul className="mt-4 pl-6 font-bold text-lg leading-8 list-disc">
+                <li>Excellent protection from moisture and water.</li>
+                <li>Excellent adhesion to metal surfaces.</li>
+                <li>Good protection against rust and water.</li>
+              </ul>
+              <h1 className="text-4xl mt-6 font-bold text-primary">
+                Applications
+              </h1>
+              <p className="mt-4 font-bold text-lg leading-8">
+                Main applications: joints, water pumps, agricultural heavy-duty
+                machines, ball and roller bearings in moderate temperatures.
               </p>
             </div>
           </section>

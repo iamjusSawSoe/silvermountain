@@ -11,7 +11,7 @@ const AboutUs = () => {
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
       >
         <div className="flex flex-col lg:flex-row justify-center mb-16 sm:mb-32 items-center w-full gap-10">
           <div>

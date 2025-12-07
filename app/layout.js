@@ -90,6 +90,9 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <link rel="preload" as="image" href="/assets/product/1.jpg" />
+        <link rel="preload" as="image" href="/assets/contact_us/1.jpg" />
+        <link rel="preload" as="image" href="/assets/service/1.jpg" />
       </head>
       <body className={`${poppins.variable} antialiased`}>
         <Header />

@@ -12,7 +12,7 @@ const Services = () => {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
           className="flex flex-col lg:flex-row justify-center items-center w-full gap-10"
         >
           <div className="text-white font-bold w-[90%] xl:w-[75%] mx-auto  py-20 flex min-h-screen lg:h-screen">
